@@ -1,8 +1,8 @@
 # CS50x 2024
-* Scratch week:
+* Scratch week(Lecture 0):
   * Project Pending
 
-* C language:
+* C language(Lecture 1):
   * %s ---> placeholder, Format code
   * Truncation decimal
   * typecasting
@@ -12,3 +12,5 @@
   * logical operators and relational operators
   * Switch statement, int x = (exp) ? 5:6;
   * Linux Commands ---> cntrl L, cd--> home, cp, cp -r,rm -r,rm -rf
+
+* 
