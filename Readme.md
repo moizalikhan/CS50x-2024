@@ -47,15 +47,33 @@
   * bubble sort--> n-2, Asmtotic notation, O(n2), omega(n)
   * recursion--> factorial
   * call-stack
-  * 
-  * merge sort O(nlog2n),  
-* 
-
+  * merge sort O(nlog2n),
 
 * Memory(Lecture 4):
   * %p, &a, *-->dereference operator
   * int *p = &a
+  * pointer arthimatic
+  * stdlib, malloc --> malloc(strlen(string-1), 1); return the pointer to the first char of that memory chunk and also check terminating confition
+  * free and if malloc returns null it means it does not enough memory
+  * strcpy(d,s)
+  * free(t)
+  * nul and null--> oth address--> sentinal value
+  * valgrind
+  * sizeof()
+  * 3*sizeof(int) --> array
+  * memory leaks
+  * garbage values-- patterns of zeros and ones
+  * intialy pointers point to pointees
+  * Scopes---> Global and local
+  * MC->GV->heap-><-stack
+  * passing by value, passing by reference
+  * heap overflow and Stack overflow
+  * buffer overlows.
+  * scanf("",&)
+  * File IO--> fopen("","a"), fclose, fprinf, fscanf, fread, fwrite
+  * fseek --> 
   * 
+
 * Data Structures(Lecture 5):
 
 
