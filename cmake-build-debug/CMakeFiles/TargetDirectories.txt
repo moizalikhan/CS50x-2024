@@ -1,3 +1,0 @@
-C:/Users/moiza/Desktop/CS50x 2024/cmake-build-debug/CMakeFiles/CS50x_2024.dir
-C:/Users/moiza/Desktop/CS50x 2024/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/moiza/Desktop/CS50x 2024/cmake-build-debug/CMakeFiles/rebuild_cache.dir

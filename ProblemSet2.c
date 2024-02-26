@@ -50,11 +50,11 @@ int score_calculator(string word)
 }
 
 // Readability
-#include <cs50.h>
-#include <stdio.h>
-#include <ctype.h>
-#include <string.h>
-#include <math.h>
+// #include <cs50.h>
+// #include <stdio.h>
+// #include <ctype.h>
+// #include <string.h>
+// #include <math.h>
 
 int letter_calculator(string User_given_text);
 int sentence_calculator(string User_given_text);
@@ -148,11 +148,11 @@ int word_calculator(string User_given_text)
 }
 
 // Ceasar Cipher
-#include <stdio.h>
-#include <cs50.h>
-#include <ctype.h>
-#include <string.h>
-#include <stdlib.h>
+// #include <stdio.h>
+// #include <cs50.h>
+// #include <ctype.h>
+// #include <string.h>
+// #include <stdlib.h>
 
 char ciphered_character(char Character, int key);
 bool only_digits(string keys);

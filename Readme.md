@@ -72,8 +72,10 @@
   * scanf("",&)
   * File IO--> fopen("","a"), fclose, fprinf, fscanf, fread, fwrite
   * fseek --> 
-  * 
+  * fopen --> 
+  * stdint --> typedef uint8_t BYTE
 
 * Data Structures(Lecture 5):
+  * 
 
 
