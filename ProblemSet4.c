@@ -81,20 +81,42 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
         {
             int sumofRed = 0, sumofGreen = 0, sumofBlue = 0;
             int count0fpixels = 0;
-            for (int row = -1; row <= 1; row++)
-            {
-                for (int col = -1; col <= 1; col++)
+            // for (int row = -1; row <= 1; row++)
+            // {
+            //     for (int col = -1; col <= 1; col++)
+            //     {
+            //         if (i + row >= 0 && i + row < height && j + col >= 0 && j + col < width)
+            //         {
+            //             sumofRed += copied_of_original[i + row][j + col].rgbtRed;
+            //             sumofGreen += copied_of_original[i + row][j + col].rgbtGreen;
+            //             sumofBlue += copied_of_original[i + row][j + col].rgbtBlue;
+            //             count0fpixels++;
+            //         }
+            //     }
+            // }
+
+            // Define the offsets for neighboring pixels
+            int offsets[3][3][2] =
                 {
-                    if (i + row >= 0 && i + row < height && j + col >= 0 && j + col < width)
-                    {
-                        sumofRed += copied_of_original[i + row][j + col].rgbtRed;
-                        sumofGreen += copied_of_original[i + row][j + col].rgbtGreen;
-                        sumofBlue += copied_of_original[i + row][j + col].rgbtBlue;
-                        count0fpixels++;
-                    }
+                    {-1, -1}, {-1, 0}, {-1, 1}, {0, -1}, {0, 0}, {0, 1}, {1, -1}, {1, 0}, {1, 1}};
+
+            // Iterate over all possible offsets
+            for (int k = 0; k < 9; k++)
+            {
+                // Calculate the coordinates of the neighboring pixel
+                int new_i = i + offsets[k][0];
+                int new_j = j + offsets[k][1];
+
+                // Check if the new coordinates are within bounds
+                if (new_i >= 0 && new_i < height && new_j >= 0 && new_j < width)
+                {
+                    // Accumulate color values
+                    sumofRed += copied_of_original[new_i][new_j].rgbtRed;
+                    sumofGreen += copied_of_original[new_i][new_j].rgbtGreen;
+                    sumofBlue += copied_of_original[new_i][new_j].rgbtBlue;
+                    count0fpixels++;
                 }
             }
-
             float computed_Red_one = (float)sumofRed / count0fpixels;
             float computed_Green_one = (float)sumofGreen / count0fpixels;
             float computed_Blue_one = (float)sumofBlue / count0fpixels;
