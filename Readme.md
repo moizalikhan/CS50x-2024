@@ -76,6 +76,19 @@
   * stdint --> typedef uint8_t BYTE
 
 * Data Structures(Lecture 5):
+  * abstract Datatypes: queues-fifo(enqueue, dequeue), stacks-LIFO(puch,pop)
+  * arrays: dynamic memory allocation
+  * LinkedList--> pointers typedef struct node{struct node *next}node, 
+  * prepending: O(1) for inserting, O(n) for searching
+  * appending : O(n) for inserting
+  * Tress --> BST sorted(LOGN)
+  * Dictnories: keys and value
+  * Hashing: D->R(mapping), hashtable(array-->linkedlist)
+  * hashvalue and location-->O(n/k)-->buckets-->O(n)
+  * unsigned int (const char *word){}
+  * Tries--> tress of arrays
+  * we don't use tries because of large space.
   * 
+
 
 
