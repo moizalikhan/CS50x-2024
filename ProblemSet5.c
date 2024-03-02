@@ -219,5 +219,3 @@ void visualizer(node *list)
     }
     printf("+---------------------+\n\n");
 }
-
-// HashTable

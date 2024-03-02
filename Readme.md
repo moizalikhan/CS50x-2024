@@ -74,6 +74,7 @@
   * fseek --> 
   * fopen --> 
   * stdint --> typedef uint8_t BYTE
+  * 
 
 * Data Structures(Lecture 5):
   * abstract Datatypes: queues-fifo(enqueue, dequeue), stacks-LIFO(puch,pop)
@@ -88,7 +89,19 @@
   * unsigned int (const char *word){}
   * Tries--> tress of arrays
   * we don't use tries because of large space.
-  * 
+  * arrays: insertion and deletion.only for lookup
+  * insertion and deletion is good bt lookup is bad
+  * hashtable is good for lookup.
+  * tries is not good space wise.
+  * struct node mycar{}
+  * delection in SLL is recursion
+  * for collision in hashmap: we use linear probing--> not good(clustering)
+  * in hashmaps we use chaining --> for that we bring linked list
+  * tries--> data + multiple pointers and also has traversal pointer but also required alot of space
+  * Stacks: lifo and by arrays and LL(insert and delete from the front), Push and Pop
+  * queue: fifo and by arrays and LL(DLL), Enqueue and dequeue
+
+*  
 
 
 
